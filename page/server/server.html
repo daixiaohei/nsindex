@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>新闻中心</title>
+  <!-- Bootstrap core CSS -->
+  <link href="../../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- seajs core code
+  ================================================== -->
+  <script src="../../static/lib/sea.js"></script>
+  <script>
+    seajs.config({
+      base: '../../static',
+      charset: 'utf-8',
+      timeout: 20000,
+      debug: false,
+      alias: {//别名配置
+        jquery: 'lib/jquery1.7.0.min',
+        $: 'lib/jquery1.7.0.min',
+        bootstrap: 'lib/bootstrap/js/bootstrap.min',
+        header: 'css/include/header.css',
+        footer: 'css/include/footer.css',
+        index: 'script/index'
+      }
+    });
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../../static/script/ltie9/html5shiv.min.js"></script>
+  <script src="../../static/script/ltie9/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <!-- HEADER -->
+  <div id="header"></div>
+  <script>seajs.use("index",function(indexModule){indexModule.initHeader()});</script>
+
+  <div class="container" style="height: 400px">
+    <div class="text-center"><img src="../../static/css/img/common/no-open.jpg"/></div>
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+  <script>seajs.use("index",function(indexModule){indexModule.initFooter();});</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!-- TOP
+    ================================================== -->
+<div class="top">
+  <div class="container">
+    <i class="header-logo"></i>
+    <i class="header-server"></i>
+  </div>
+</div>
+
+<!-- NAVBAR
+================================================== -->
+<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="javascript:void(0);"></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active navbar-li"><a href="javascript:void(0);" id="indexBtn">首页</a></li>
+        <li class="dropdown navbar-li platform">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 物联网交互平台 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="javascript:void(0);" id="introBtn">物联网交互平台简介</a></li>
+            <li><a href="javascript:void(0);" id="appBtn">物联网交互平台应用</a></li>
+          </ul>
+        </li>
+        <li class="dropdown navbar-li solutions">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 解决方案 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="javascript:void(0);" id="cityBtn">智慧城市</a></li>
+            <li><a href="javascript:void(0);" id="trafficBtn">智能交通</a></li>
+            <li><a href="javascript:void(0);" id="bankBtn">智能银亭</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">售卖</li>
+            <li><a href="javascript:void(0);" id="saleBtn">N次元售卖亭</a></li>
+          </ul>
+        </li>
+        <li class="navbar-li"><a href="javascript:void(0);" id="newsBtn">新闻中心</a></li>
+        <li class="navbar-li"><a href="javascript:void(0);" id="aboutsBtn">关于N次元</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script>
+  seajs.use(['jquery','script/common'],function($,common){
+    var menu = common.Request("menu");
+    $(".navbar-li").removeClass("active");
+    switch (menu) {
+      case "index" :
+        $("#indexBtn").parent().addClass("active");
+        break;
+      case "platform" :
+        $(".platform").addClass("active");
+        break;
+      case "solutions" :
+        $(".solutions").addClass("active");
+        break;
+      case "news" :
+        $("#newsBtn").parent().addClass("active");
+        break;
+      case "abouts" :
+        $("#aboutsBtn").parent().addClass("active");
+        break;
+    };
+    common.fireNavBar();
+  });
+</script>

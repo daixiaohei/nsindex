@@ -1,0 +1,215 @@
+/*     footer CSS
+------------------------------------------------*/
+#footer {
+  margin-top: 60px
+}
+.footer {
+  padding: 30px 0;
+  background: rgb(44, 36, 36) url("img/index/bottom.jpg") repeat-x;
+  color: rgb(252, 252, 252);
+}
+.footer > .container > ul > li {
+  text-decoration: none;
+  list-style: none;
+  float: left;
+}
+
+.blue {
+  color: #2a6496;
+}
+.txt-right {
+  margin: 10px 0;
+  text-align: right;
+}
+.li-divider {
+  width: 1px;
+  height: 15px;
+  border: 1px solid rgb(151, 134, 194);;
+  margin: 3px 9px;
+}
+.footericon {
+  float: left;
+  margin-top: 20px;
+  display: inline-block;
+  width: 188px;
+  height: 59px;
+  background: url("img/common/001.png") no-repeat;
+}
+.footer-ul {
+  list-style: none;
+}
+.footer-ul > li{
+  float: right;
+}
+
+
+/*     header CSS
+------------------------------------------------*/
+.header-logo {
+  width: 604px;
+  height: 100px;
+  display: inline-block;
+  background: url("img/index/logo.jpg") no-repeat;
+}
+.header-server {
+  width: 355px;
+  height: 100px;
+  display: inline-block;
+  float: right;
+  background: url("img/index/service.jpg") no-repeat 0 100%;
+}
+
+/* ACTIVE */
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+  color: #fff;
+  background-color: rgb(29, 154, 238);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: rgb(192, 173, 173);
+}
+
+.navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 0;
+  min-height: 35px;
+}
+
+.navbar-brand {
+  height: 35px;
+  padding: 9px 15px;
+}
+
+.navbar-nav1111 {
+  width: 100%;
+  float: inherit;
+}
+
+.navbar-nav1111 > li {
+  width: 19.5%;
+  text-align: center;
+}
+
+.navbar-nav > li > a {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+/*     GLOBAL CSS
+------------------------------------------------*/
+.blue {
+  color: #2a6496;
+}
+.txt-right {
+  margin: 10px 0;
+  text-align: right;
+}
+.font-h3 {
+  font-family: "Microsoft YaHei", "微软雅黑",SimSun,"宋体";
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 400px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+
+/*    INDEX CSS
+------------------------------------------------*/
+.ul-index {
+  width: 200px;
+  list-style: none;
+}
+.ul-index > li {
+  padding: 0 0 0 30px;
+  margin: 10px 0;
+  text-align: left;
+  background: url(img/index/index-crow.jpg) no-repeat;
+}
+.ul-index > li > a {
+  color: #1E3344;
+}
+.ul-index-server {
+  width: 410px;
+  list-style: none;
+}
+.ul-index-server > li {
+  width: 160px;
+  padding: 0 0 0 30px;
+  margin: 10px 0;
+  text-align: left;
+  float: left;
+  background: url(img/index/index-crow.jpg) no-repeat;
+}
+.ul-index-server > li > a {
+  color: #1E3344;
+}
+.img-index-city {
+  position: absolute;
+  top: 120px;
+  right: 10px;
+}
+.img-index-server-btn {
+  position: absolute;
+  top: 265px;
+  right: 10px;
+}
+.img-index-plat {
+  margin: 0 0 0 70px;
+}

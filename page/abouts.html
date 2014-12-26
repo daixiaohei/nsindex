@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="N次元,恩次元,物联网交互平台,智慧城市,智能交通,智能银亭,N次元售卖亭,广佛通充值,话费充值" />
+  <meta name="description" content="N次元物联网交互平台是公司产品和服务的基础，公司的所有服务产品均是基于物联网交互平台建设和运营的。N次元物联网交互平台是物联网、信息技术集合的N2N智能交互平台。" />
+  <title>N次元物联网交互平台门户网站|关于N次元</title>
+  <!-- Bootstrap core CSS -->
+  <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/css/common.css" rel="stylesheet">
+  <!-- seajs core code
+    ================================================== -->
+  <script src="../static/lib/sea.js"></script>
+  <!--[if lt IE 9]>
+  <script src="../static/script/ltie9/html5shiv.min.js"></script>
+  <script src="../static/script/ltie9/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- HEADER -->
+<div id="header"></div>
+<script>seajs.use("index",function(indexModule){indexModule.initHeader()});</script>
+
+<div class="container">
+  <span class="bread-nav1"> &gt 关于N次元 &gt <strong class="bread-nav-txt"> 公司介绍</strong></span>
+  <!-- two columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-3" style="padding: 0">
+      <div class="left-panel">
+        <img src="../static/css/img/abouts/logo.jpg" alt="platform-logo"/>
+        <div class="left-panel-main">
+          <ul class="nav-left-ul">
+            <li class="li-active li-1" id="abouts"><span class="line line-crow-red">公司介绍</span></li>
+            <li class="li-2" id="contact"><span class="line">联系方式</span></li>
+            <li class="li-2" id="joinIn"><span class="line">招商加盟</span></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-9">
+      <div class="main-panel">
+        <div class="panel-li panel-li-1">
+          <img src="../static/css/img/abouts/a01.jpg" width="845px" height="300px" style="margin: 0 0 20px 0"/>
+          <p class="article">广州恩次元信息科技有限公司是利用物联网、信息技术服务金融领域的高科技企业。公司建设和运营N次元物联网金融服务平台，包含远程服务中心和各类型的智能服务终端，同时提供网点优化、增值业务等服务项目。依托N次元物联网金融服务平台，N次元为各类型的智能服务终端提供运营管理服务。智能服务终端的类型包括但不限于：智能银亭、智能站亭、智能增值业务站、智能售货亭、智能停车场等。</p>
+          <p class="article">广州恩次元信息科技有限公司拥有“N次元”服务品牌，为商业银行提供新型智能的银行网点建设和运营服务；为政府建设和运营智慧城市、智能交通类的信息工程项目。N次元已成功自主研发银联系统的底层支付系统，并和广东省银联达成合作，实现了与交通卡系统、通讯商系统、物业公司系统等各类合作缴费、购票等增值业务应用的支付对接。N次元已和广州、顺德、惠州等地的多家商业银行达成合作，成功中标佛山市顺德区智能交通的工程项目。由珠三角开始，未来N次元将服务迅速发展到广东全省和全国。</p>
+          <p class="article">公司现包括广州总公司和顺德运营中心，设备完全自主研发、生产与安装。N次元拥有一批物联网、信息技术方面的专家和专业技术人员以及资深管理人员。软件开发中心有多名在安防、远程服务、智能识别方面的专家。N次元以“创新技术、引领未来生活”为企业理念，服务金融、服务民生。引领人们乐享未来金融e生活。</p>
+          <h1 style="text-align: center;margin: 50px 0 20px 0">企业文化</h1>
+          <img src="../static/css/img/abouts/a03.jpg" width="645px" height="300px" style="margin: 30px 100px 40px 100px"/>
+          <div class="col-lg-6">
+            <img src="../static/css/img/abouts/a04.jpg" width="320px" height="240px" style="margin: 30px 50px 10px 50px"/>
+            <p class="text-center">图·N次元总部</p>
+          </div>
+          <div class="col-lg-6">
+            <img src="../static/css/img/abouts/a05.jpg" width="320px" height="240px" style="margin: 30px 50px 10px 50px"/>
+            <p class="text-center">图·N次元顺德运营中心</p>
+          </div>
+        </div>
+        <div class="panel-li panel-li-2 none">
+          <img src="../static/css/img/abouts/b01.jpg" width="845px" height="300px" style="margin: 0 0 20px 0"/>
+          <div class="contact-our">
+            <p>公司名称：广州恩次元信息科技有限公司</p>
+            <p>总部地址：广州高新技术开发区科学城科珠路203号F栋1202</p>
+            <p>客服电话：<span class="blue">400-119-9838</span></p>
+            <p>电话：020-32052102</p>
+            <p>传真：020-32052109</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.col-lg-8 -->
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+<!-- FOOTER -->
+<div id="footer"></div>
+<script>
+  seajs.use(["index","jquery"],function(indexModule,$){
+    indexModule.initFooter();
+    indexModule.initPanel();
+    $("#joinIn").click(function(){
+      location.href = 'join.html?menu=abouts';
+    });
+  });</script>
+
+</body>
+</html>

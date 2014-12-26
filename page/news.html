@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="N次元,恩次元,物联网交互平台,智慧城市,智能交通,智能银亭,N次元售卖亭,广佛通充值,话费充值" />
+  <meta name="description" content="N次元物联网交互平台是公司产品和服务的基础，公司的所有服务产品均是基于物联网交互平台建设和运营的。N次元物联网交互平台是物联网、信息技术集合的N2N智能交互平台。" />
+  <title>N次元物联网交互平台门户网站|新闻中心</title>
+  <!-- Bootstrap core CSS -->
+  <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/css/common.css" rel="stylesheet">
+  <!-- seajs core code
+  ================================================== -->
+  <script src="../static/lib/sea.js"></script>
+  <script src="../static/lib/seajs-css.js"></script>
+  <!--[if lt IE 9]>
+  <script src="../static/script/ltie9/html5shiv.min.js"></script>
+  <script src="../static/script/ltie9/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <!-- HEADER -->
+  <div id="header"></div>
+  <script>seajs.use("index",function(indexModule){indexModule.initHeader()});</script>
+
+  <div class="container news-panel">
+    <span class="bread-nav"> &gt 新闻中心 &gt <strong class="bread-nav-txt"> 公司动态</strong></span>
+    <div class="space"></div>
+
+    <div id="newslists">
+      <script id="newslist" type="text/x-handlebars-template">
+        <div class="row news-row">
+          <div class="col-lg-3 news-pic">
+            <img src="../images/news/as.jpg" alt=""/>
+          </div>
+          <div class="col-lg-9">
+            <div class="news-txt">
+              <h1>{{title}}</h1>
+              <p>{{publishDate}}</p>
+              <p>{{digest}}</p>
+              <a href="javascript:scroll(0,0)" class="detail">查看详情&gt&gt</a>
+            </div>
+          </div>
+        </div>
+      </script>
+
+      <script id="newslistR" type="text/x-handlebars-template">
+        <div class="row news-row">
+          <div class="col-lg-9">
+            <div class="news-txt">
+              <h1>{{title}}</h1>
+              <p>{{publishDate}}</p>
+              <p>{{digest}}</p>
+              <a href="javascript:scroll(0,0)" class="detail">查看详情&gt&gt</a>
+            </div>
+          </div>
+          <div class="col-lg-3 news-pic">
+            <img src="../images/news/as.jpg" alt=""/>
+          </div>
+        </div>
+      </script>
+    </div>
+
+    <div id="newsdetail" class="news-detail none">
+
+    </div>
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+  <script>seajs.use(["index","script/widget/news"],function(indexModule){indexModule.initFooter();indexModule.initPanel()});</script>
+</body>
+</html>
